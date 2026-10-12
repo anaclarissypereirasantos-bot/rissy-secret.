@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#681b32"><title>Rissy Secret | Seu lado mais secreto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="topline">UM TOQUE DE DELICADEZA EM CADA DETALHE</div>
+<header class="header">
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+  <a class="brand" href="/"><span>rissy secret</span><small>Seu lado mais secreto.</small></a>
+  <nav id="nav"><a href="#colecao">Coleção</a><a href="#sobre">A Rissy Secret</a><a href="#entrega">Entrega & trocas</a></nav>
+  <a class="bag" href="#colecao" aria-label="Ver coleção">♡ <span id="bagCount">0</span></a>
+</header>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">INTIMATES • AUTOCUIDADO • VOCÊ</p>
+    <h1>Vista-se de<br><em>confiança.</em></h1>
+    <p>Peças escolhidas para celebrar a beleza que existe em você.</p>
+    <a class="btn" href="#colecao">Descobrir coleção <span>↗</span></a>
+  </div>
+  <div class="hero-art" role="img" aria-label="Composição elegante em tons bordô e rosé">
+    <div class="art-shape"></div><div class="art-ribbon"></div>
+    <div class="art-caption">delicadeza<br>que veste você</div>
+  </div>
+</section>
+<section class="intro" id="sobre"><span class="small-line"></span><p>Mais do que lingerie, um convite para se sentir bem na própria pele.</p><span class="small-line"></span></section>
+<main class="catalog" id="colecao">
+  <div class="section-head"><div><p class="eyebrow">ESCOLHA SEU FAVORITO</p><h2>Nossa coleção</h2></div><p class="muted">Detalhes que fazem sentir.</p></div>
+  <div class="filters">
+    <label class="search"><span>⌕</span><input id="search" placeholder="Buscar uma peça..." aria-label="Buscar produtos"></label>
+    <select id="category" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option><option>Conjuntos</option><option>Sutiãs</option><option>Calcinhas</option><option>Body</option><option>Corsets</option><option>Linha noite</option><option>Acessórios</option><option>Sale</option></select>
+    <select id="size" aria-label="Filtrar por tamanho"><option value="">Todos os tamanhos</option><option>P</option><option>M</option><option>G</option><option>GG</option><option>Único</option></select>
+  </div>
+  <div id="products" class="product-grid"><div class="loading">Carregando a coleção...</div></div>
+  <p id="empty" class="empty" hidden>Nenhuma peça encontrada. Tente outro filtro.</p>
+</main>
+<section class="promise" id="entrega"><div><span>01</span><h3>Escolhas especiais</h3><p>Uma curadoria feita com carinho para você.</p></div><div><span>02</span><h3>Compra com cuidado</h3><p>Atendimento próximo, discreto e atencioso.</p></div><div><span>03</span><h3>Dúvidas?</h3><p>Fale conosco para consultar tamanhos, entrega e trocas.</p></div></section>
+<footer><a class="brand footer-brand" href="/"><span>rissy secret</span><small>Seu lado mais secreto.</small></a><p>© <span id="year"></span> Rissy Secret. Feito com carinho.</p><a href="/admin/">Acesso administrativo</a></footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="/store.js"></script>
+</body></html>
